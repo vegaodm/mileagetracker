@@ -103,7 +103,7 @@
           <tr><th>Expenses</th><td>Amount, date, category, VAT rate and an optional note.</td></tr>
           <tr><th>Settings</th><td>Vehicle, working hours, frequent places, tax rates, language.</td></tr>
         </table>
-        <p class="muted" style="margin-top:14px">Location: <code>Application Support/SpendlyMileageTracker/</code> inside the app's container, protected by iOS file protection and the device passcode.</p>
+        <p class="muted" style="margin-top:14px">The database lives in <code>Application Support/SpendlyMileageTracker/</code>, protected by iOS file protection and the device passcode. Receipt photos and backup files live in the app's <code>Documents</code> folder, which the Files app shows as <em>Spendly Mileage</em> (<code>ScanPhotos/</code>, <code>Backups/</code>, <code>Reports/</code>).</p>
       </div>
 
       <div class="card">
@@ -148,6 +148,12 @@
       </div>
 
       <div class="card">
+        <h2>Tamper evidence</h2>
+        <p>Every edit to a trip is appended — never overwritten — with the values before and after, the time, and a SHA‑256 hash that includes the previous revision's hash. Changing a record outside the app breaks that chain.</p>
+        <p>Settings → Data → <strong>Verify records</strong> recomputes the chain on your device and names any trip that no longer matches. Generated PDFs print the report id, the time and a SHA‑256 of the database, and a filed report locks its trips until you unlock one with a written reason, which is itself recorded.</p>
+      </div>
+
+      <div class="card">
         <h2>Your rights</h2>
         <p>Because the developer holds no personal data, access and erasure happen on your device through the app. You can still write to <a href="mailto:vegaodm@outlook.com?subject=Spendly%20Mileage%20Privacy">vegaodm@outlook.com</a> with any question about this policy or about the processing described here.</p>
         <p class="muted">Legal basis under the GDPR: performance of the service you asked for (Art. 6 (1) (b)) and your consent for location and motion access, which iOS collects and you can withdraw at any time.</p>
@@ -176,7 +182,7 @@
           <tr><th>Ausgaben</th><td>Betrag, Datum, Kategorie, MwSt.-Satz und eine optionale Notiz.</td></tr>
           <tr><th>Einstellungen</th><td>Fahrzeug, Arbeitszeit, häufige Orte, Steuersätze, Sprache.</td></tr>
         </table>
-        <p class="muted" style="margin-top:14px">Ort: <code>Application Support/SpendlyMileageTracker/</code> im Container der App, geschützt durch den iOS-Dateischutz und den Gerätecode.</p>
+        <p class="muted" style="margin-top:14px">Die Datenbank liegt in <code>Application Support/SpendlyMileageTracker/</code>, geschützt durch den iOS-Dateischutz und den Gerätecode. Belegfotos und Sicherungsdateien liegen im Ordner <code>Documents</code> der App, den die Dateien-App als <em>Spendly Mileage</em> zeigt (<code>ScanPhotos/</code>, <code>Backups/</code>, <code>Reports/</code>).</p>
       </div>
 
       <div class="card">
@@ -218,6 +224,12 @@
         <h2>Aufbewahrung und Löschung</h2>
         <p>Fahrtdaten und steuerrelevante Angaben bleiben <strong>zehn Jahre</strong> erhalten — die Frist, die das deutsche Steuerrecht erwartet. Rohe GPS-Punkte werden sechs Monate nach dem Prüfen einer Fahrt ausgedünnt; die vereinfachte Route bleibt. Gelöschte Fahrten verschwinden nach einer kurzen Frist, außer sie gehören zu einem gesicherten Bericht.</p>
         <p>Um alles zu löschen, löschen Sie die einzelnen Fahrten und Belege oder die App — iOS entfernt dann ihren Container samt Datenbank und Belegfotos. Bereits nach iCloud Drive geschriebene Sicherungen bleiben dort, bis Sie sie in der Dateien-App löschen.</p>
+      </div>
+
+      <div class="card">
+        <h2>Manipulationsschutz</h2>
+        <p>Jede Änderung an einer Fahrt wird angehängt — nie überschrieben — mit Werten davor und danach, dem Zeitpunkt und einem SHA‑256-Hash, der den Hash der vorherigen Änderung einschließt. Wird ein Eintrag außerhalb der App verändert, bricht diese Kette.</p>
+        <p>Einstellungen → Daten → <strong>Aufzeichnungen prüfen</strong> rechnet die Kette auf dem Gerät nach und nennt jede Fahrt, die nicht mehr passt. Erzeugte PDFs tragen Berichts-ID, Zeitpunkt und einen SHA‑256 der Datenbank; ein gesicherter Bericht sperrt seine Fahrten, bis Sie eine mit schriftlicher Begründung entsperren — auch die wird festgehalten.</p>
       </div>
 
       <div class="card">

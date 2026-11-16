@@ -150,6 +150,28 @@
       </div>
 
       <div class="card">
+        <h3>The lock-screen card</h3>
+        <p>While a trip is recording, a Live Activity shows the distance and the elapsed time on the Lock Screen and in the Dynamic Island. It has no buttons by design: tap it to open the app, where the recording strip carries the stop button. The card is created only while recording and is dismissed when the trip ends.</p>
+        <p class="muted">iOS only lets an app start a Live Activity in the foreground. A drive detected while the phone is in your pocket gets its card the next time you open the app; the trip itself records regardless.</p>
+      </div>
+
+      <div class="card">
+        <h3>Backup files: export, import, delete</h3>
+        <p>Settings → Data → <strong>Export backup</strong> writes a timestamped <code>.zip</code> (database, the receipt photos it references, and a manifest with a SHA‑256) into <code>Files → Spendly Mileage → Backups</code> and opens the share sheet. The file stays on the device; tap it in the list to share it again, swipe left to delete it.</p>
+        <p><strong>Import backup</strong> accepts that <code>.zip</code> or a bare <code>.sqlite</code>. The checksum and the schema are verified before anything is replaced; the current database is kept as a safety copy and the restore is applied before the next launch.</p>
+      </div>
+
+      <div class="card">
+        <h3>Verify records</h3>
+        <p>Settings → Data → <strong>Verify records</strong> recomputes the hash chain of every edit and reports how many revisions match. Entries written before the chain existed are counted as legacy, not as damage. If a trip reports a mismatch, restore the newest backup rather than editing the database with another tool.</p>
+      </div>
+
+      <div class="card">
+        <h3>Us, UK and currency</h3>
+        <p>Settings → Tax region switches the rate table and the currency. Germany uses €/km, the United States and the United Kingdom use $/mi and £/mi; the presets are editable per year, and the chosen currency is used on the PDF and the CSV. Private trips are never part of a report in any country.</p>
+      </div>
+
+      <div class="card">
         <h3>Privacy and tax</h3>
         <p>Nothing is uploaded; receipts are read on the device. The full policy is at <a href="index.html">vegaodm.github.io/mileagetracker</a>. Spendly Mileage is a record-keeping aid, not tax advice — the rates and the legal wording follow the bundled 2026 German rules and can be adjusted per year in Settings.</p>
       </div>
@@ -207,6 +229,28 @@
         <h3>Akkulaufzeit</h3>
         <p>Im Ruhezustand nutzt die App die signifikante Standortänderung, nicht dauerhaftes GPS. Während einer Fahrt arbeitet sie mit voller Genauigkeit, stoppt die Ortung aber, wenn das Auto 20 Sekunden steht — eine rote Ampel kostet nichts. Nach fünf Minuten ohne Bewegung endet die Aufzeichnung.</p>
         <p class="muted">Fehlt am Tagesende eine Fahrt, in iOS-Einstellungen → Datenschutz &amp; Sicherheit → Ortungsdienste → Systemdienste prüfen, ob standortbasierte Hinweise und signifikante Orte verfügbar sind.</p>
+      </div>
+
+      <div class="card">
+        <h3>Die Karte auf dem Sperrbildschirm</h3>
+        <p>Während eine Fahrt aufgezeichnet wird, zeigt eine Live-Aktivität Strecke und Dauer auf dem Sperrbildschirm und in der Dynamic Island. Sie hat bewusst keine Tasten: Antippen öffnet die App, in der der Streifen die Stopp-Taste trägt. Die Karte entsteht nur während der Aufzeichnung und verschwindet mit der Fahrt.</p>
+        <p class="muted">iOS erlaubt das Starten einer Live-Aktivität nur im Vordergrund. Eine Fahrt, die bei gesperrtem Gerät beginnt, bekommt ihre Karte beim nächsten Öffnen der App; aufgezeichnet wird sie trotzdem.</p>
+      </div>
+
+      <div class="card">
+        <h3>Sicherungsdateien: exportieren, importieren, löschen</h3>
+        <p>Einstellungen → Daten → <strong>Sicherung exportieren</strong> schreibt eine <code>.zip</code> mit Zeitstempel (Datenbank, die referenzierten Belegfotos und ein Manifest mit SHA‑256) nach <code>Dateien → Spendly Mileage → Backups</code> und öffnet den Teilen-Dialog. Die Datei bleibt auf dem Gerät; Antippen teilt sie erneut, Wischen nach links löscht sie.</p>
+        <p><strong>Sicherung importieren</strong> akzeptiert diese <code>.zip</code> oder eine reine <code>.sqlite</code>. Prüfsumme und Schema werden vor dem Ersetzen kontrolliert; die bisherige Datenbank bleibt als Sicherheitskopie, die Wiederherstellung greift vor dem nächsten Start.</p>
+      </div>
+
+      <div class="card">
+        <h3>Aufzeichnungen prüfen</h3>
+        <p>Einstellungen → Daten → <strong>Aufzeichnungen prüfen</strong> rechnet die Hash-Kette aller Änderungen nach und meldet, wie viele Einträge passen. Einträge aus der Zeit vor der Kette gelten als Altbestand, nicht als Schaden. Meldet eine Fahrt eine Abweichung, stellen Sie die neueste Sicherung wieder her, statt die Datenbank mit einem anderen Werkzeug zu bearbeiten.</p>
+      </div>
+
+      <div class="card">
+        <h3>USA, Großbritannien und Währung</h3>
+        <p>Einstellungen → Steuersätze wechselt zwischen Ländern und Währungen. Deutschland rechnet in €/km, USA und Vereinigtes Königreich in $/mi und £/mi; die Sätze sind je Jahr anpassbar, und die gewählte Währung erscheint im PDF und in der CSV. Privatfahrten sind in keinem Land Teil eines Berichts.</p>
       </div>
 
       <div class="card">
