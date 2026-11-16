@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spendly Mileage — Privacy Policy / Datenschutz</title>
+<meta name="description" content="Spendly Mileage privacy policy: no account, no server, no analytics. English and German.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f7f7fa;
+    --card: #ffffff;
+    --ink: #16181d;
+    --muted: #5d6470;
+    --line: #e3e5ec;
+    --accent: #1a2b6b;
+    --accent-soft: #eef0ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0c12;
+      --card: #14161f;
+      --ink: #f2f3f7;
+      --muted: #a4aab8;
+      --line: #262a36;
+      --accent: #9fb0ff;
+      --accent-soft: #1b2033;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 20px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .badge {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: linear-gradient(140deg, #242a55, #0a0b12);
+    display: grid; place-items: center; flex: 0 0 auto;
+  }
+  .badge span { font-size: 22px; }
+  .brand h1 { font-size: 19px; margin: 0; letter-spacing: -0.01em; }
+  .brand p { margin: 0; color: var(--muted); font-size: 13px; }
+  .lang { display: flex; gap: 4px; background: var(--accent-soft); padding: 4px; border-radius: 999px; }
+  .lang button {
+    border: 0; background: transparent; color: var(--muted);
+    font: inherit; font-size: 14px; padding: 6px 14px; border-radius: 999px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+  main { margin-top: 26px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 18px; padding: 22px 22px 6px; margin-bottom: 18px;
+  }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin: 0 0 10px; }
+  h3 { font-size: 17px; margin: 20px 0 6px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; margin: 8px 0 0; }
+  li { margin-bottom: 6px; }
+  .lead { font-size: 18px; }
+  .pill { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 3px 10px; font-size: 13px; font-weight: 600; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 16px; }
+  th { color: var(--muted); font-weight: 600; width: 42%; }
+  footer { margin-top: 26px; color: var(--muted); font-size: 14px; }
+  [data-lang] { display: none; }
+  [data-lang].on { display: block; }
+  @media (max-width: 520px) { th { width: 45%; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="badge"><span>🧾</span></div>
+      <div>
+        <h1>Spendly Mileage</h1>
+        <p>com.vega.spendly.mileagetracker</p>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language / Sprache">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="de" aria-pressed="false">Deutsch</button>
+    </div>
+  </header>
+
+  <main>
+    <div data-lang="en" class="on">
+      <div class="card">
+        <h2>Privacy policy</h2>
+        <p class="lead"><strong>Your data never leaves your device.</strong> Spendly Mileage has no account, no server and no analytics. Trips, routes, odometer readings and receipt photos are stored in a database on your iPhone.</p>
+        <p class="muted">Last updated: 16 November 2026</p>
+      </div>
+
+      <div class="card">
+        <h2>What is stored on your device</h2>
+        <table>
+          <tr><th>Trips and routes</th><td>Start and end time, distance, simplified GPS track, category, destination, purpose, client, odometer readings and notes.</td></tr>
+          <tr><th>Receipt photos</th><td>The photos you take or import, stored as JPEG files next to the database, plus the text recognised on them.</td></tr>
+          <tr><th>Expenses</th><td>Amount, date, category, VAT rate and an optional note.</td></tr>
+          <tr><th>Settings</th><td>Vehicle, working hours, frequent places, tax rates, language.</td></tr>
+        </table>
+        <p class="muted" style="margin-top:14px">Location: <code>Application Support/SpendlyMileageTracker/</code> inside the app's container, protected by iOS file protection and the device passcode.</p>
+      </div>
+
+      <div class="card">
+        <h2>Permissions and why</h2>
+        <ul>
+          <li><strong>Location — Always, with Precise Location.</strong> Needed to notice a drive and record its route while the screen is locked. “While Using” and reduced accuracy are not enough; the app tells you when either is missing.</li>
+          <li><strong>Motion &amp; Fitness.</strong> Used only to tell driving apart from walking, and to stop GPS at a red light.</li>
+          <li><strong>Camera and Photos.</strong> Only when you add a receipt. You choose the photo; nothing is captured in the background.</li>
+        </ul>
+        <p class="muted">Every permission can be revoked in iOS Settings. Automatic recording then stops; trips you start by hand keep working.</p>
+      </div>
+
+      <div class="card">
+        <h2>iCloud Drive (optional)</h2>
+        <p>If you are signed in to iCloud, the app writes snapshot folders into its own iCloud Drive container: the database, the receipt photos it references, and a manifest with a checksum. The last 14 daily snapshots are kept, and each snapshot taken before a PDF export is kept as report evidence.</p>
+        <p>These files travel through <strong>Apple's iCloud</strong> under Apple's terms. The developer has no access to your iCloud account and operates no server that could read them. If you never sign in to iCloud, the app works fully offline; the manual export to Files remains available.</p>
+      </div>
+
+      <div class="card">
+        <h2>Receipts and OCR</h2>
+        <p>Text recognition runs on the device with Apple's Vision framework. The photo is read in the app's process and is not uploaded anywhere. It is kept only because it is the evidence for an expense — delete the expense and the photo goes with it.</p>
+      </div>
+
+      <div class="card">
+        <h2>Sharing and export</h2>
+        <p>A PDF mileage log or a CSV file leaves the app only when you tap export and then choose a destination in the system share sheet. The app itself never sends data. If iCloud Drive is available, a copy of each export is also placed in the app's <code>Exports</code> folder.</p>
+      </div>
+
+      <div class="card">
+        <h2>No tracking, no advertising</h2>
+        <ul>
+          <li>No analytics SDK, no crash-reporting SDK, no advertising identifier.</li>
+          <li>No third-party code is linked besides the open-source database library (GRDB), which runs locally.</li>
+          <li>No profile is built and nothing is sold or shared.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Retention and deletion</h2>
+        <p>Trip records and tax-relevant fields are kept for <strong>ten years</strong>, which is the retention period German tax law expects. Raw GPS points are thinned out six months after a trip is reviewed; the simplified route stays. Deleted trips are removed after a short grace period, except where they belong to a filed report.</p>
+        <p>To erase everything, delete the individual trips and receipts, or delete the app — iOS removes its container, including the database and receipt photos. Snapshots already written to iCloud Drive stay there until you delete them in the Files app.</p>
+      </div>
+
+      <div class="card">
+        <h2>Your rights</h2>
+        <p>Because the developer holds no personal data, access and erasure happen on your device through the app. You can still write to <a href="mailto:vegaodm@outlook.com?subject=Spendly%20Mileage%20Privacy">vegaodm@outlook.com</a> with any question about this policy or about the processing described here.</p>
+        <p class="muted">Legal basis under the GDPR: performance of the service you asked for (Art. 6 (1) (b)) and your consent for location and motion access, which iOS collects and you can withdraw at any time.</p>
+      </div>
+
+      <div class="card">
+        <h2>Children, changes, contact</h2>
+        <p>Spendly Mileage is a business tool and is not directed at children. If the app's data handling changes, this page is updated before the release that changes it; the date at the top is the version you are reading.</p>
+        <p>Spendly Mileage is a record-keeping aid, not tax advice.</p>
+        <p>Contact: <a href="mailto:vegaodm@outlook.com?subject=Spendly%20Mileage%20Privacy">vegaodm@outlook.com</a> · <a href="support.html">Support</a></p>
+      </div>
+    </div>
+
+    <div data-lang="de">
+      <div class="card">
+        <h2>Datenschutzerklärung</h2>
+        <p class="lead"><strong>Ihre Daten verlassen dieses Gerät nie.</strong> Spendly Mileage hat kein Konto, keinen Server und keine Analyse. Fahrten, Routen, Kilometerstände und Belegfotos liegen in einer Datenbank auf Ihrem iPhone.</p>
+        <p class="muted">Stand: 16. November 2026</p>
+      </div>
+
+      <div class="card">
+        <h2>Was auf dem Gerät gespeichert wird</h2>
+        <table>
+          <tr><th>Fahrten und Routen</th><td>Beginn und Ende, Strecke, vereinfachte GPS-Spur, Kategorie, Ziel, Zweck, Auftraggeber, Kilometerstände und Notizen.</td></tr>
+          <tr><th>Belegfotos</th><td>Die Fotos, die Sie aufnehmen oder auswählen, als JPEG neben der Datenbank, dazu der darauf erkannte Text.</td></tr>
+          <tr><th>Ausgaben</th><td>Betrag, Datum, Kategorie, MwSt.-Satz und eine optionale Notiz.</td></tr>
+          <tr><th>Einstellungen</th><td>Fahrzeug, Arbeitszeit, häufige Orte, Steuersätze, Sprache.</td></tr>
+        </table>
+        <p class="muted" style="margin-top:14px">Ort: <code>Application Support/SpendlyMileageTracker/</code> im Container der App, geschützt durch den iOS-Dateischutz und den Gerätecode.</p>
+      </div>
+
+      <div class="card">
+        <h2>Berechtigungen und ihr Zweck</h2>
+        <ul>
+          <li><strong>Standort — „Immer“, mit genauer Position.</strong> Nötig, um eine Fahrt zu bemerken und die Route bei gesperrtem Bildschirm aufzuzeichnen. „Beim Verwenden“ und eine ungenaue Position reichen nicht; die App weist darauf hin.</li>
+          <li><strong>Bewegung &amp; Fitness.</strong> Nur um Fahren von Gehen zu unterscheiden und das GPS an der roten Ampel zu stoppen.</li>
+          <li><strong>Kamera und Fotos.</strong> Nur wenn Sie einen Beleg hinzufügen. Sie wählen das Foto; im Hintergrund wird nichts aufgenommen.</li>
+        </ul>
+        <p class="muted">Jede Berechtigung lässt sich in den iOS-Einstellungen entziehen. Die automatische Aufzeichnung endet dann; Fahrten von Hand funktionieren weiter.</p>
+      </div>
+
+      <div class="card">
+        <h2>iCloud Drive (optional)</h2>
+        <p>Wenn Sie bei iCloud angemeldet sind, legt die App Sicherungsordner in ihrem eigenen iCloud-Drive-Container ab: die Datenbank, die darin referenzierten Belegfotos und ein Manifest mit Prüfsumme. Die letzten 14 täglichen Sicherungen bleiben erhalten, zusätzlich jede Sicherung vor einem PDF-Export als Nachweis zum Bericht.</p>
+        <p>Diese Dateien laufen über <strong>Apple iCloud</strong> zu Apples Bedingungen. Der Entwickler hat keinen Zugriff auf Ihr iCloud-Konto und betreibt keinen Server, der sie lesen könnte. Ohne iCloud-Anmeldung funktioniert die App vollständig offline; der manuelle Export in „Dateien“ bleibt möglich.</p>
+      </div>
+
+      <div class="card">
+        <h2>Belege und Texterkennung</h2>
+        <p>Die Texterkennung läuft auf dem Gerät mit Apples Vision-Framework. Das Foto wird im Prozess der App gelesen und nirgendwohin übertragen. Es bleibt nur erhalten, weil es der Nachweis für eine Ausgabe ist — löschen Sie die Ausgabe, verschwindet das Foto mit.</p>
+      </div>
+
+      <div class="card">
+        <h2>Teilen und Export</h2>
+        <p>Ein PDF-Fahrtenbuch oder eine CSV-Datei verlässt die App erst, wenn Sie den Export antippen und im systemweiten Teilen-Dialog ein Ziel wählen. Die App selbst versendet nichts. Ist iCloud Drive verfügbar, legt sie zusätzlich eine Kopie jedes Exports im Ordner <code>Exports</code> ab.</p>
+      </div>
+
+      <div class="card">
+        <h2>Keine Verfolgung, keine Werbung</h2>
+        <ul>
+          <li>Kein Analyse-SDK, kein Absturzmelder, keine Werbe-ID.</li>
+          <li>Außer der quelloffenen Datenbankbibliothek (GRDB), die lokal läuft, ist kein Fremdcode eingebunden.</li>
+          <li>Es wird kein Profil gebildet und nichts verkauft oder weitergegeben.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Aufbewahrung und Löschung</h2>
+        <p>Fahrtdaten und steuerrelevante Angaben bleiben <strong>zehn Jahre</strong> erhalten — die Frist, die das deutsche Steuerrecht erwartet. Rohe GPS-Punkte werden sechs Monate nach dem Prüfen einer Fahrt ausgedünnt; die vereinfachte Route bleibt. Gelöschte Fahrten verschwinden nach einer kurzen Frist, außer sie gehören zu einem gesicherten Bericht.</p>
+        <p>Um alles zu löschen, löschen Sie die einzelnen Fahrten und Belege oder die App — iOS entfernt dann ihren Container samt Datenbank und Belegfotos. Bereits nach iCloud Drive geschriebene Sicherungen bleiben dort, bis Sie sie in der Dateien-App löschen.</p>
+      </div>
+
+      <div class="card">
+        <h2>Ihre Rechte</h2>
+        <p>Da der Entwickler keine personenbezogenen Daten hält, finden Auskunft und Löschung auf Ihrem Gerät in der App statt. Für Fragen zu dieser Erklärung oder zur beschriebenen Verarbeitung schreiben Sie an <a href="mailto:vegaodm@outlook.com?subject=Spendly%20Mileage%20Datenschutz">vegaodm@outlook.com</a>.</p>
+        <p class="muted">Rechtsgrundlage nach der DSGVO: Vertragserfüllung (Art. 6 Abs. 1 lit. b) und Ihre Einwilligung für Standort und Bewegung, die iOS einholt und die Sie jederzeit widerrufen können.</p>
+      </div>
+
+      <div class="card">
+        <h2>Kinder, Änderungen, Kontakt</h2>
+        <p>Spendly Mileage ist ein Werkzeug für die Arbeitswelt und richtet sich nicht an Kinder. Ändert sich der Umgang mit Daten, wird diese Seite vor der betreffenden Version aktualisiert; das Datum oben nennt den Stand, den Sie gerade lesen.</p>
+        <p>Spendly Mileage ist eine Aufzeichnungshilfe, keine Steuerberatung.</p>
+        <p>Kontakt: <a href="mailto:vegaodm@outlook.com?subject=Spendly%20Mileage%20Datenschutz">vegaodm@outlook.com</a> · <a href="support.html">Support</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span data-lang="en" class="on">© 2026 SPENDLY · Spendly Mileage</span>
+    <span data-lang="de">© 2026 SPENDLY · Spendly Mileage</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var stored = null;
+  try { stored = localStorage.getItem('spendly-lang'); } catch (e) {}
+  var initial = params.get('lang') || stored || ((navigator.language || 'en').toLowerCase().indexOf('de') === 0 ? 'de' : 'en');
+  apply(initial);
+
+  document.querySelectorAll('.lang button').forEach(function (button) {
+    button.addEventListener('click', function () {
+      apply(button.dataset.set);
+    });
+  });
+
+  function apply(lang) {
+    if (lang !== 'de') { lang = 'en'; }
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-lang]').forEach(function (element) {
+      element.classList.toggle('on', element.getAttribute('data-lang') === lang);
+    });
+    document.querySelectorAll('.lang button').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.dataset.set === lang));
+    });
+    try { localStorage.setItem('spendly-lang', lang); } catch (e) {}
+  }
+})();
+</script>
+</body>
+</html>
