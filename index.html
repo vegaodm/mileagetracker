@@ -102,6 +102,7 @@
           <tr><th>Receipt photos</th><td>The photos you take or import, stored as JPEG files next to the database, plus the text recognised on them.</td></tr>
           <tr><th>Expenses</th><td>Amount, date, category, VAT rate and an optional note.</td></tr>
           <tr><th>Settings</th><td>Vehicle, working hours, frequent places, tax rates, language.</td></tr>
+          <tr><th>Detection log</th><td>State changes and outcomes of the trip engine — “monitoring → candidate → recording”, why a trip was blocked, distance and gaps per trip. No coordinates, addresses or names. It stays on the device and is never part of an export or a backup.</td></tr>
         </table>
         <p class="muted" style="margin-top:14px">The database lives in <code>Application Support/SpendlyMileageTracker/</code>, protected by iOS file protection and the device passcode. Receipt photos and backup files live in the app's <code>Documents</code> folder, which the Files app shows as <em>Spendly Mileage</em> (<code>ScanPhotos/</code>, <code>Backups/</code>, <code>Reports/</code>).</p>
       </div>
@@ -120,6 +121,11 @@
         <h2>iCloud Drive (optional)</h2>
         <p>If you are signed in to iCloud, the app writes snapshot folders into its own iCloud Drive container: the database, the receipt photos it references, and a manifest with a checksum. The last 14 daily snapshots are kept, and each snapshot taken before a PDF export is kept as report evidence.</p>
         <p>These files travel through <strong>Apple's iCloud</strong> under Apple's terms. The developer has no access to your iCloud account and operates no server that could read them. If you never sign in to iCloud, the app works fully offline; the manual export to Files remains available.</p>
+      </div>
+
+      <div class="card">
+        <h2>Diagnostics</h2>
+        <p>Settings → About → Diagnostics shows the permission states, the GPS and Live Activity status, the database size and the detection log. It is built for a support email: tap <em>Copy report</em> and nothing but that status text leaves the app. The report and the log are never uploaded automatically.</p>
       </div>
 
       <div class="card">
@@ -181,6 +187,7 @@
           <tr><th>Belegfotos</th><td>Die Fotos, die Sie aufnehmen oder auswählen, als JPEG neben der Datenbank, dazu der darauf erkannte Text.</td></tr>
           <tr><th>Ausgaben</th><td>Betrag, Datum, Kategorie, MwSt.-Satz und eine optionale Notiz.</td></tr>
           <tr><th>Einstellungen</th><td>Fahrzeug, Arbeitszeit, häufige Orte, Steuersätze, Sprache.</td></tr>
+          <tr><th>Erkennungsprotokoll</th><td>Zustandswechsel und Ergebnisse der Fahrterkennung – „monitoring → candidate → recording“, warum eine Fahrt blockiert wurde, Strecke und Lücken je Fahrt. Keine Koordinaten, Adressen oder Namen. Es bleibt auf dem Gerät und ist nie Teil eines Exports oder einer Sicherung.</td></tr>
         </table>
         <p class="muted" style="margin-top:14px">Die Datenbank liegt in <code>Application Support/SpendlyMileageTracker/</code>, geschützt durch den iOS-Dateischutz und den Gerätecode. Belegfotos und Sicherungsdateien liegen im Ordner <code>Documents</code> der App, den die Dateien-App als <em>Spendly Mileage</em> zeigt (<code>ScanPhotos/</code>, <code>Backups/</code>, <code>Reports/</code>).</p>
       </div>
@@ -199,6 +206,11 @@
         <h2>iCloud Drive (optional)</h2>
         <p>Wenn Sie bei iCloud angemeldet sind, legt die App Sicherungsordner in ihrem eigenen iCloud-Drive-Container ab: die Datenbank, die darin referenzierten Belegfotos und ein Manifest mit Prüfsumme. Die letzten 14 täglichen Sicherungen bleiben erhalten, zusätzlich jede Sicherung vor einem PDF-Export als Nachweis zum Bericht.</p>
         <p>Diese Dateien laufen über <strong>Apple iCloud</strong> zu Apples Bedingungen. Der Entwickler hat keinen Zugriff auf Ihr iCloud-Konto und betreibt keinen Server, der sie lesen könnte. Ohne iCloud-Anmeldung funktioniert die App vollständig offline; der manuelle Export in „Dateien“ bleibt möglich.</p>
+      </div>
+
+      <div class="card">
+        <h2>Diagnose</h2>
+        <p>Einstellungen → Über → Diagnose zeigt Berechtigungszustände, GPS- und Live-Activity-Status, die Größe der Datenbank und das Erkennungsprotokoll. Es ist für eine Support-Mail gedacht: „Bericht kopieren“ überträgt nichts außer diesem Statustext. Bericht und Protokoll werden nie automatisch hochgeladen.</p>
       </div>
 
       <div class="card">
